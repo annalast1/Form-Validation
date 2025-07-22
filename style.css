@@ -1,0 +1,49 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    padding: 10px;
+}
+
+input:invalid {
+    border: 2px solid red;
+    background-color: rgb(240, 202, 202);
+}
+
+.errMsg {
+    display: block;
+    color: red;
+    font-size: 16px;
+    margin-top: 0;
+    position: relative;
+    left: 205px;
+}
+
+#buttonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+button {
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    background-color: silver;
+    border: none;
+}
+
+#submit {
+    color: green;
+}
+
+#cancel {
+    color: red;
+}

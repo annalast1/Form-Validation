@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="./js-file.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" novalidate>
+        <div>
+            <label  for="email">E-mail</label>
+            <input  type="email" 
+                id="email"
+                required
+                autocomplete="off">
+            <p id="emailMsg"></p>
+        </div>
+
+        <div>
+            <label  for="country">Country</label>
+            <input  type="text" 
+                    id="country"
+                    minlength="2"
+                    autocomplete="off">
+            <p id="countryMsg"></p>
+        </div>
+
+        <div>
+            <label  for="postCode">Post Code</label>
+            <input  type="text" 
+                id="postCode"
+                autocomplete="off"
+                minlength="2"
+                maxlength="10">
+            <p id="postCodeMsg"></p>
+        </div>
+
+        <div>
+            <label  for="password">Password</label>
+            <input  type="password" 
+                id="password"
+                autocomplete="off"
+                minlength="8"
+                maxlength="16">
+            <p id="passwordMsg"></p>
+        </div>
+
+        <div>
+            <label  for="confirm">Password Confirmation</label>
+            <input  type="password" 
+                id="confirm"
+                autocomplete="off"
+                minlength="8"
+                maxlength="16">
+            <p id="confirmMsg"></p>
+        </div>
+            
+        <div id="buttonBox">
+            <button type="submit" id="submit">Submit</button>
+            <button id="cancel">Cancel</button>
+        <div id="buttonBox">
+
+        </div>
+        
+    </form>
+</body>
+</html>
